@@ -12,9 +12,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnChangeTxt"
-            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="8dp"/>
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="104dp"
+    />
     <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -24,7 +25,8 @@
             android:id="@+id/textEdit"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="8dp" android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toTopOf="@+id/btnChangeTxt"/>
+            app:layout_constraintBottom_toTopOf="@+id/btnChangeTxt" app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintVertical_bias="0.995"/>
     <TextView
             android:text="TextView"
             android:layout_width="wrap_content"
@@ -33,5 +35,21 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="8dp"
-            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/btnChangeTxt"/>
+            android:layout_marginTop="8dp" app:layout_constraintTop_toBottomOf="@+id/btnChangeTxt"
+            app:layout_constraintVertical_bias="0.125"/>
+    <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp" app:srcCompat="@drawable/barbecue"
+            android:id="@+id/imageView" app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="64dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+    />
+    <Button
+            android:text="이미지 토클"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnToggleImg" android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"/>
 </android.support.constraint.ConstraintLayout>

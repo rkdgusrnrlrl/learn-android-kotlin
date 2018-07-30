@@ -9,9 +9,22 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         btnChangeTxt.setOnClickListener {
-            var text = textEdit.text
+            val text = textEdit.text
             textView.text = text
+        }
+
+        var imageId = R.drawable.grill
+        btnToggleImg.setOnClickListener {
+
+            val newImageId = when (imageId) {
+                R.drawable.grill -> R.drawable.barbecue
+                else -> R.drawable.grill
+            }
+
+            imageView.setImageResource(newImageId)
+            imageId = newImageId
         }
     }
 }
